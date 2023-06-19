@@ -87,7 +87,7 @@ RUN go get github.com/go-openapi/spec && \
 	rm -rf ${GOPATH}/src/github.com/grpc-ecosystem/ \
 	&& mkdir -p ${GOPATH}/src/github.com/grpc-ecosystem/ && \
 	cd ${GOPATH}/src/github.com/grpc-ecosystem && \
-	git clone --single-branch -b CorrectIdCheck https://github.com/kirthana7/grpc-gateway.git && \
+	git clone --single-branch -b FixIdCheck https://github.com/kirthana7/grpc-gateway.git && \
 	cd grpc-gateway/protoc-gen-swagger && go build -o /out/usr/bin/protoc-gen-swagger main.go
 
 RUN mkdir -p /out/protos && \
